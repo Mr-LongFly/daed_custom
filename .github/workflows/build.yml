@@ -198,8 +198,8 @@ jobs:
           export OUTPUT=bundled/${{ steps.get_filename.outputs.BUNDLE_NAME }}
           make
           cp ./install/daed.service ./bundled/
-          curl -L -o ./bundled/geoip.dat https://github.com/v2rayA/dist-v2ray-rules-dat/raw/master/geoip.dat
-          curl -L -o ./bundled/geosite.dat https://github.com/v2rayA/dist-v2ray-rules-dat/raw/master/geosite.dat
+          curl -L -o ./bundled/geoip.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geoip.dat
+          curl -L -o ./bundled/geosite.dat https://github.com/Loyalsoldier/v2ray-rules-dat/releases/latest/download/geosite.dat
 
       - name: Upload artifact - bundle
         uses: actions/upload-artifact@v3
