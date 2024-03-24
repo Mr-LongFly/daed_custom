@@ -33,8 +33,7 @@ jobs:
       - name: Download wing vendor
         run: |
           git submodule update --init --recursive
-          git submodule update --remote
-          cd dae-core && git submodule update --remote && cd ..
+          git submodule update --remote --recursive
           export GOMODCACHE="${PWD}"/go-mod
           go mod download -modcacherw
           cd dae-core && go mod download -modcacherw && cd ..
