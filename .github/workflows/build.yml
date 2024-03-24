@@ -87,19 +87,19 @@ jobs:
         goarch: [386, riscv64]
 
         include:
-          # BEGIN Linux ARM 5 6 7 64
-          - goos: linux
-            goarch: arm64
-          - goos: linux
-            goarch: arm
-            goarm: 7
-          - goos: linux
-            goarch: arm
-            goarm: 6
-          - goos: linux
-            goarch: arm
-            goarm: 5
-          # END Linux ARM 5 6 7
+          # # BEGIN Linux ARM 5 6 7 64
+          # - goos: linux
+          #   goarch: arm64
+          # - goos: linux
+          #   goarch: arm
+          #   goarm: 7
+          # - goos: linux
+          #   goarch: arm
+          #   goarm: 6
+          # - goos: linux
+          #   goarch: arm
+          #   goarm: 5
+          # # END Linux ARM 5 6 7
 
           # BEGIN Linux AMD64 v1 v2 v3
           - goos: linux
@@ -113,24 +113,24 @@ jobs:
             goamd64: v3
           # END Linux AMD64 v1 v2 v3
 
-          # BEGIN Linux mips
-          - goos: linux
-            goarch: mips64
-            cgo_enabled: 1
-            cc: mips64-linux-gnuabi64-gcc
-          - goos: linux
-            goarch: mips64le
-            cgo_enabled: 1
-            cc: mips64el-linux-gnuabi64-gcc
-          - goos: linux
-            goarch: mipsle
-            cgo_enabled: 1
-            cc: mipsel-linux-gnu-gcc
-          - goos: linux
-            goarch: mips
-            cgo_enabled: 1
-            cc: mips-linux-gnu-gcc
-          # END Linux mips
+          # # BEGIN Linux mips
+          # - goos: linux
+          #   goarch: mips64
+          #   cgo_enabled: 1
+          #   cc: mips64-linux-gnuabi64-gcc
+          # - goos: linux
+          #   goarch: mips64le
+          #   cgo_enabled: 1
+          #   cc: mips64el-linux-gnuabi64-gcc
+          # - goos: linux
+          #   goarch: mipsle
+          #   cgo_enabled: 1
+          #   cc: mipsel-linux-gnu-gcc
+          # - goos: linux
+          #   goarch: mips
+          #   cgo_enabled: 1
+          #   cc: mips-linux-gnu-gcc
+          # # END Linux mips
       fail-fast: false
 
     env:
